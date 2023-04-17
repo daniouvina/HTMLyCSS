@@ -29,7 +29,26 @@ elemento
 3- Cuando no se define "top", "bottom", "left" o "right",
 el punto de referencia es el contenedor. 
 Cuando si lo definimos, toma de referencia el "viewport"
-(todo lo que se puede ver en el navegador)-->
+(todo lo que se puede ver en el navegador)
+Siempre que el contenedor NO este posicionado, en caso de que
+este posicionado, toma el contenedor de referencia.-->
 h2{
     position: absolute;
 }
+
+Position Fixed<!--NO MANTIENE EL ESPACIO ASIGNADO
+Es igual que Absolute, solo que queda fijado
+Aun cuando se hace scroll.-->
+
+div{
+    position: fixed;
+}
+
+Position Sticky<!--MANTIENE EL ESPACIO ASIGNADO.
+Es parecido al fixed, solo que se queda pegado
+cuando el scroll pasa por arriba.-->
+div{
+    position: sticky;
+}
+
+
