@@ -1,0 +1,20 @@
+<!--Se aplica para imagenes-->
+
+.caja1 {
+    margin: 25px;
+    width: 350px;
+    height: 500px;
+}
+
+.caja img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: contain; <!--Se ajusta al contenido, pero no
+    rellena los espacios en blanco..-->
+    object-fit: cover; <!--Se ajusta al contenedor y recorta
+    lo que sobra.-->
+    object-fit: none; <!--Propiedad por defecto, no hace nada-->
+    object-fit: scale-down; <!--Se queda con la resolucion mas
+    chica del resultado de las propiedades-->
+}
