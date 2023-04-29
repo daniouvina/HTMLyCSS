@@ -1,5 +1,8 @@
  Flexbox.
 
+ PROPIEDAD QUE SE PUEDE APLICAR A FLEX CONTAINER. (display: flex;)
+ NO A LOS ITEMS. 
+
  Requiere de dos elementos para funcionar.
  Flex container y Flex item.
 
@@ -33,3 +36,31 @@ se van hacia abajo para respetar el ancho. -->
 
 flex-flow: column wrap; <!--Para poner 2 parametros (Flex direcion y wrap
     juntos.)-->
+
+justify-content: center; <!--Se centra el contenido, respetando 
+las medidas-->
+
+justify-content: space-around; <!--Funciona como un margin:auto;
+Centra, pero dejando margin automatico -->
+
+justify-content: space-between; <!--Da un margen automatico a las 
+cajas.-->
+
+justify-content: space-evenly; <!--Asigna el mismo margin a todas
+las cajas.-->
+
+align-items: center; <!--Centra los elementos verticalmente.-->
+
+align-items: flex-end; <!--Alinea verticalmente al final.-->
+
+align-items: flex-start; <!--alinea verticalmente al inicio.-->
+
+align-stretch; <!--Estira las cajas.-->
+
+align-content flex-start; <!--Alinea verticalmente al inicio,
+ESTE SE UTILIZA CUANDO SE OCUPA MAS DE 1 LINEA EN EL VIEWPORT.-->
+
+flex-wrap: wrap:reverse;
+align-content: baseline; <!--Estos dos comandos combinados, hacen que 
+los bloques se posicionen abajo, y cuando la pantalla se achica
+se van acumulando hacia arriba.-->
