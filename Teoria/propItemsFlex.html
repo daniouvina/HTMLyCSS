@@ -1,0 +1,26 @@
+
+Margin para los elementos "flex", funciona a la invertida.
+
+align-self: center/flex-end/baseline; <!---Mueve el elemento
+flex.-->
+
+
+min-width: 200px; <!--Ajustamos el tamaño minimo que va a tener
+la caja.-->
+
+flex-grow: 1; <!--Se reparte el espacio que sobra entre las cajas.
+tambien se puede asignar a cada elemento, y este recibira
+todo el espacio disponible restante.-->
+
+flex-basis: 200px; <!--Funciona como el width, pero tiene
+mas predominancia, y es exclusiva de flex.-->
+
+flex-shrink: 2; <!--Indica que caja va a ceder mas espacio cuando
+se requiera.-->
+
+flex: flex-grow flex-shrink flex-basis; <!--Abreviatura "shorthand"
+de las 3 propiedades anteriores.-->
+
+order: 1; <!--Ordena los elementos respecto a donde apunta
+el main axis. a mayor valor, posiciona el objeto al final
+de donde apunta. -->
