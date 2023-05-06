@@ -1,0 +1,48 @@
+
+<!-- Selector universal: * selecciona TODO.-->
+*{ 
+    color: red;
+}
+
+<!-- Selector de tipo: "h1", "h2", "h3", "p", "button", "imput";
+Cualquier etiqueta.-->
+h1{
+    color: red;
+}
+
+<!-- Por clase. EJ:-->
+"html"
+<h1 class="clase1"> </h1>
+
+"css"
+.clase1{
+    color: red;
+}
+
+<!-- Por identificador (Siempre es unico)-->
+"html"
+<h1 id="id1"> </h1>
+
+"css"
+#id1{
+    color: red;
+}
+
+<!-- Selector descendiente-->
+"html"
+<h1> <p> </p> </h1>
+<!-- De esta manera, se aplicara a los "p" que esten dentro de un "h1"-->
+"css"
+h1 p {
+    color: red;
+}
+
+<!-- Pseudoclases.-->
+"html"
+<h1> <p> </p> </h1>
+
+"css"
+h1 p:hover{ <!--Esto cambiara el color cuando el puntero pase por arriba, siendo ":hover" la pseudoclase.-->
+    color: red;
+}
+

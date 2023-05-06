@@ -1,0 +1,30 @@
+
+Lo que hace el normalize, es eliminar los estilos por defecto
+que definen los navegadores.
+
+https://necolas.github.io/normalize.css/ <!-- Descarga-->
+
+
+<!-- Como incluirlo:-->
+
+"html"
+<link rel="stylesheet" type="text/css" href="normalize.css">
+
+<!-- Hay que modificar lo siguiente:-->
+
+"ctrl + f" y buscamos img
+
+img{
+    border-style: none;
+    max-width: 100%; <!-- Agregar esta linea, ajusta las imagenes en
+         celulares al 100%-->
+}
+
+Agregar tambien, arriba de todo, estas 3 lineas.
+
+*{
+    box-sizing: border-box; <!-- Hace que las propiedades que le agreguemos
+    a la caja, no modifique su tamaño total.-->
+    padding: 0;
+    margin: 0;
+}

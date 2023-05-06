@@ -1,0 +1,17 @@
+
+Valor por defecto de los navegadores respecto a los "em" es de 16px
+
+se puede redefinir el valor de "em" por herencia.
+por ejemplo:
+
+CSS
+
+.contact-form { <!-- Esta seria la caja contenedora-->
+    font-size: 20px;
+}
+
+.contact-form__h2 { <!-- "em" hereda los 20px de la caja contenedora.-->
+    font-size: 1em;
+}
+
+<!-- Esto aplica para cualquier propiedad de unidad de medida.-->

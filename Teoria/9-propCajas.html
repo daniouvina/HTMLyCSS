@@ -1,0 +1,47 @@
+
+background-color: red; <!-- Da color al fondo.-->
+
+
+        BOX SIZING.
+
+box-sizing: border-box; <!-- Hace que el padding
+    y el border formen parte del calculo del ancho
+    y alto de la caja y no lo sumen directamente.-->
+
+box-sizing: content-box; <!-- Hace lo contrario que el
+    anterior, suma padding y border al tamaño
+    de la pagina, en lugar de promediarlo.-->
+
+
+        BORDER.
+
+border-radius: 2em; <!-- Redondea los bordes.-->
+
+border: 4px solid blue; <!-- dashed, double, groove, ridge, 
+    inset, outset; son otros estilos que se le puede dar al borde.-->
+
+
+        SOMBRA.
+
+box-shadow: 2px 4px 0px #000 <!-- eje x (costados), eje y(arriba y abajo),
+    tamaño de desenfoque y tamaño del borde(gralmente 0), color. -->
+
+text-shadow: 2px 2px 7px #000, 2px 2px 7px #000 <!-- eje x, eje y, 
+    desenfoque, color. Tambien se puede duplicar el efecto poniendo
+    "coma" y repitiendo los parametros.-->
+
+
+    ------------------------------------------------------
+
+transform: rotate(45deg); <!-- Rotar las cajas.-->
+
+opacity: 0.5; <!-- Da transparencia, rango desde 0 a 1.-->
+
+<!-- Como centrar una caja con position absolute:-->
+.caja {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
