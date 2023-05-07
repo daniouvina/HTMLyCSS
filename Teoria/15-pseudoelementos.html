@@ -1,18 +1,25 @@
+
 <!-- "first-Line" y "first-letter" se pueden aplicar a los elementos 
-que NO son "inline", y siempre se usan sobre un OBJETO. 
-En este caso: ".texto"-->
+en bloque, y siempre se usan sobre un elemento. En este caso: ".texto"-->
 .texto{
     padding: 20px;
 }
 
-.texto::first-line{ <!--Toma la primera linea-->
+.texto::first-line{ <!-- Toma la primera linea.-->
     color: blue;
 }
 
-.texto::first:letter{ <!--Toma la primera letra-->
+.texto::first:letter{ <!-- Toma la primera letra.-->
 }
 
-<!--Modificar texto dentro de un input-->
+
+<!-- Modificar texto dentro de un input.-->
+"html"
+<form>
+    <input type="text" placeholder="Inserte su mensaje">
+</form>
+
+"css"
 form{
     margin: 100px;
     display: block;
@@ -32,18 +39,13 @@ input::placeholder {
 }
 
 <!--Modificar la seleccion que se hace al arrastrar el click.-->
-p{
-    padding: 6px;
-    width: 100%;
-}
-
 p::selection {
     color: blue;
     background-color: yellow;
 }
 
-<!--"before" y "after" como se indica, son palabras que se indican
-antes o despues de otra palabra.-->
+<!-- "before" y "after" como se indica, son palabras que se indican
+antes o despues de otra palabra, pero estas no se pueden seleccionar.-->
 b::before{
     content: "hola";
 }

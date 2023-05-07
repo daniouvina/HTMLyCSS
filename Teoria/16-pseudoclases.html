@@ -1,10 +1,10 @@
-<!--Una pseudoclase es un selector que marca los elementos que están
+<!-- Una pseudoclase es un selector que marca los elementos que están
 en un estado específico, por ejemplo, los que son el primer
 elemento de su tipo, o aquellos por los que el cursor les pasa por
 encima.-->
 
-<!--HOVER
-Hover se refiere a que cuando pasamos el mouse
+HOVER
+<!-- Hover se refiere a que cuando pasamos el mouse
 por encima del elemento, esto cambia segun las propiedades
 que le demos.-->
 .caja1 {
@@ -17,32 +17,32 @@ que le demos.-->
     background: darkslateblue;
 }
 
-<!--LINK
-Da propiedades a los links.-->
-a:link { <!--Da propiedad a los links q no fueron visitados-->
+LINK
+<!-- Da propiedades a los links.-->
+a:link { <!-- Da propiedad a los links q no fueron visitados.-->
     color: red;
 }
 
-a:visited{ <!--Da color a los que ya fueron visitados-->
+a:visited{ <!-- Da color a los que ya fueron visitados.-->
     color: black;
 }
 
-<!--ACTIVE
-funciona cuando hacemos click y mantenemos, cuando se suelta,
+ACTIVE
+<!-- Funciona cuando hacemos click y mantenemos, cuando se suelta,
 deja de hacer la propiedad.-->
 .caja{
     width:250px;
     height: 250px;
     background: red;
     margin: 25px;
-    transition: all 1s; <!--No recomendado usar "ALL"-->
+    transition: all 1s; <!-- No recomendado usar "all"-->
 }
-.caja1:active{ <!--Cambia el fondo de "red" a "blue"-->
+.caja1:active{ <!-- Cambia el fondo de "red" a "blue"-->
     background: blue;
 }
 
-<!--FOCUS
-Se aplica a los input, se activa cuando se selecciona el objeto.-->
+FOCUS
+<!-- Se aplica a los input, se activa cuando se selecciona el objeto.-->
 .caja{
     margin: 25px;
     background: lightgrey;
@@ -53,9 +53,12 @@ Se aplica a los input, se activa cuando se selecciona el objeto.-->
     background: white;
 }
 
-<!--LANG
-Resalta lo que detecta este en x idioma.-->
+LANG
+<!--Resalta lo que detecta este en x idioma.-->
+"html"
+<b lang="es">hello how are you</b>
 
+"css"
 .caja{
     margin: 25px;
 }
@@ -65,5 +68,4 @@ Resalta lo que detecta este en x idioma.-->
     padding: 20px;
 }
 
-En HTML:
-<b lang="es">hello how are you</b>
+
