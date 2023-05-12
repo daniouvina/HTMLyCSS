@@ -1,62 +1,33 @@
 
-.cont { /*Propiedades dadas a una clase*/
-    margin: auto;
-    margin-top: 50px;
-    border: 4px solid gold;
+.menu-titulo{
+    display: flex;
+    font-size: 18px;
     background: blue;
-    width: 50%;
-    color: gold;
-    padding: 10px;
+    color:white;
 }
 
-.cont::selection{
-        color: gold;
-        background-color: black;
+.menu-titulo__p{
+    margin-right: 100px;
 }
 
-.cont img{ /*Propiedades dadas a la imagen*/
-    float: right;
+.menu-titulo__a{
+    justify-content: center;
+    color:white
+}
+
+.flex-container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.flex-container__div{
+    color:white;
+    background: blue;
+    text-align: center;
+    height: 150px;
     width: 150px;
-    margin: 10px;
-}
-
-form {
-    margin: 100px;
-    background-color: rgb(0, 0, 255);
-    border: solid rgb(51, 51, 201);
-    border-radius: 10px;
-    padding: 10px;
-}
-
-input {
-    padding: 5px;
-    width: 100%;
-    background: gold;
-}
-
-input::placeholder {
-    color: black;
-    background: gold;
-}
-
-
-.bocadiv{
-    cursor: pointer;
-    margin-top: 100px;
-    height: 500px;
-    width: 300px;
     border: 2px solid blue;
-
-}
-
-.escudo{
-    height: 100%;
-    width: 100%;
-    object-fit: none;
-}
-
-.roman{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }

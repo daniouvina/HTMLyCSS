@@ -10,17 +10,30 @@ Flex container y Flex item.
 Cuenta con dos ejes.
 
 MAIN AXIS -> Eje x (Eje horizontal)
+De izquierda a derecha por defecto. ("main-start", "main-end")
 
 CROSS AXIS -> Eje y (Eje vertical)
+De arriba hacia abajo por defecto. ("cross-start, "cross-end")
 
 display: none; <!-- Deja de mostrar un elemento.-->
 
-display: flex; <!--Al poner dos container y asignarles la propiedad
-display: flex; , los elementos se ponen uno al lado del otro,
-y si por ejemplo, hay texto dentro del contenedor. se mantiene
-la altura aunque haya diferencia en la cantidad de texto.
-Ademas, si varia el tamaño de la pantalla donde se visualiza la web
+display: flex; <!--##Al poner un contenedor ("div") que tiene la propiedad 
+"display: flex;" y dentro de este contenedor creamos
+mas div's(serian los elementos flex), los elementos se ponen uno al 
+lado del otro, y si por ejemplo, hay texto dentro del contenedor.
+se mantiene la altura aunque haya diferencia en la cantidad de texto.
+##Si varia el tamaño de la pantalla donde se visualiza la web
 el contenido se ajusta. -->
+
+"html"
+<div class="flex-container">
+    <div class="flex-container__div">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/CABJ70.png/138px-CABJ70.png" alt="Bocaaa." class="escudo">
+    </div>
+    <div class="flex-container__div">
+    <img src="https://i.pinimg.com/564x/8c/c8/76/8cc876ac126dd0cdefd24b4667ad2725.jpg " alt="Roman." class="roman">
+    </div>
+</div>
 
 flex-direction: row; <!--Propiedad por defecto, se comporta como
 filas, en forma horizontal-->
@@ -58,10 +71,10 @@ align-items: flex-end; <!--Alinea verticalmente al final.-->
 
 align-items: flex-start; <!--alinea verticalmente al inicio.-->
 
-align-stretch; <!--Estira las cajas.-->
-
 align-content flex-start; <!--Alinea verticalmente al inicio,
-ESTE SE UTILIZA CUANDO SE OCUPA MAS DE 1 LINEA EN EL VIEWPORT.-->
+    ESTE SE UTILIZA CUANDO SE OCUPA MAS DE 1 LINEA EN EL VIEWPORT.-->
+
+align-stretch; <!--Estira las cajas.-->
 
 flex-wrap: wrap:reverse;
 align-content: baseline; <!--Estos dos comandos combinados, hacen que 
