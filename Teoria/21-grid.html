@@ -1,0 +1,41 @@
+Grid Container: Contenedor "GRID", se comporta como una grilla.
+
+Grid Item: Cada uno de los elementos que forme parte del contenedor,
+se denomina "item", son los hijos directos del "grid container"
+
+Grid Cell: Es un espacio determinado adyacente.
+
+Grid Tracks: ("Column" y "Row")
+
+Grid Area: Las areas las define el usuario (Ocupa mas de una celda)
+Deben ser consecutivas, no pueden ser diagonales.
+
+Grid Line: ("colum Line" y "Row Line")
+
+<!-- Propiedad "fr" indica cual va a ser la columna o fila que va a tomar
+el espacio que resta en la pantalla. ej:-->
+"css"
+grid-template-columns: 150px 150px 1fr;
+
+
+<!-- Propiedades aplicables a "Grid Container":-->
+grid-template-rows: 150px; <!-- Declaramos la cantidad de filas-->
+
+grid-template-columns: 150px; <!-- Declaramos la cantidad de columnas-->
+
+grid-column-gap: 10px; <!-- Separa las columnas entre si-->
+
+grid-row-gap: 10px; <!-- Separa las filas entre si.-->
+
+grid-gap: 10px; <!-- Shorthand, Cantidad de separacion entre los items,
+no de los bordes del contenedor.-->
+
+grid-tmeplate-columns: repeat(3,150px); <!-- Crea 3 columnas de 150px-->
+
+
+<!-- Propiedades aplicables a "Grid Items":-->
+
+grid-column: 1 / 3; <!-- Indica en que linea empieza y en cual termina-->
+grid-column: 3 / 5; <!-- Seria para el elemento de al lado-->
+
+grid-row: 1 / 3; <!-- Indica en que linea empieza y en cual termina-->

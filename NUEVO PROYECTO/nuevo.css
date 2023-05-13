@@ -1,33 +1,14 @@
-
-.menu-titulo{
-    display: flex;
-    font-size: 18px;
-    background: blue;
-    color:white;
+body{
+    margin: 15px;
+    background: radial-gradient(circle,#fff,#bbb)
 }
 
-.menu-titulo__p{
-    margin-right: 100px;
+.grid-container{
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 1fr;
 }
 
-.menu-titulo__a{
-    justify-content: center;
-    color:white
-}
-
-.flex-container{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
-    align-items: center;
-}
-
-.flex-container__div{
-    color:white;
-    background: blue;
-    text-align: center;
-    height: 150px;
-    width: 150px;
-    border: 2px solid blue;
+.grid-item{
+    border: 2px solid #000;
 }
