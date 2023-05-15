@@ -1,0 +1,34 @@
+
+Estructuras dinamicas.
+Cantidades dinamicas.
+
+<!-- Adaptar contenido con min-content y max-context (No se 
+suele usar, pero no esta de mas.)-->
+grid-template-columns: repeat(3, max-content); <!-- Decimos que el
+ancho de la ultima columna, va a ser en base al tamaño maximo del contenido
+en caso de textos, la linea entera.-->
+
+
+<!-- Adaptar el contenido con minmax-->
+grid-template-columns: repeat(3, minmax(100px,300px)); <!-- Decimos
+que las columnas no sean mas chicas que 100px y a su vez, que no
+sean mas grandes que 300px.-->
+
+grid-template-columns: repeat (3, minmax(min-content, 200px)); <!-- Lo
+minimo que va a medir la columna, es el ancho del contenido hasta
+que encuentre un espacio, lo maximo 200px.-->
+
+
+<!-- Crear columnas dinamicas (sin indicar la cantidad).-->
+
+grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); <!-- Va
+a crear columnas a medida que el tamaño de la ventana lo permita (no
+agrega elementos nuevos, solo los va acomodando en mas columnas a lo
+largo de la ventana).-->
+
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); <!-- Lo
+que hace "auto-fit" es escalar los elementos a la pantalla, o sea,
+si tenemos 3 elementos, los va a estirar a medida que agrandemos
+la pantalla.-->
+
+

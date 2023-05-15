@@ -30,7 +30,8 @@ grid-row-gap: 10px; <!-- Separa las filas entre si.-->
 grid-gap: 10px; <!-- Shorthand, Cantidad de separacion entre los items,
 no de los bordes del contenedor.-->
 
-grid-tmeplate-columns: repeat(3,150px); <!-- Crea 3 columnas de 150px-->
+grid-template-columns: repeat(3,150px); <!-- Crea 3 columnas de 150px
+con la implementacion del "repeat"-->
 
 
 <!-- Propiedades aplicables a "Grid Items":-->
@@ -39,3 +40,7 @@ grid-column: 1 / 3; <!-- Indica en que linea empieza y en cual termina-->
 grid-column: 3 / 5; <!-- Seria para el elemento de al lado-->
 
 grid-row: 1 / 3; <!-- Indica en que linea empieza y en cual termina-->
+
+grid-row: 1 / span 2; <!-- Se le indica que empiece el la linea 1
+y ocupe 2 lineas.-->
+grid-column: 1/ span 3;
