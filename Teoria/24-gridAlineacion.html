@@ -1,0 +1,40 @@
+
+<!-- Alinear columnas y filas-->
+
+.grid-container {
+    justify-items: center; <!-- Alinea columnas, si no definimos "height" o "width", se ajusta al contenido.
+        (tambien se puede usar: "start", "end", "stretch").-->
+}
+
+.grid-container {
+    align-items: center; <!-- Alinea filas, si no definimos "height" o "width", se ajusta al contenido.
+    (tambien se puede usar: "start", "end", "stretch")-->
+}
+
+
+
+<!-- Cambiar posicion del contenedor-->
+align-content: center; <!-- Alinea verticalmente.-->
+
+justify-content: center; <!-- Alinea horizontalmente.-->
+
+
+
+<!-- Separacion entre las columnas y filas-->
+justify-content: space-evenly; <!-- Espacio entre elementos en horizontal, solo funciona con "content". Otros que 
+se pueden utilizar: "space-around", "space between".-->
+
+align-content: space-evenly; <!-- Espacio entre elementos en vertical, solo funciona con "content". Otros que 
+    se pueden utilizar: "space-around", "space between-->
+
+
+
+<!-- Centrar items individualmente, se recomenda hacerlo sin ninguna
+propiedad de posicionamiento de la caja contenedora, ej:
+"space-evenly" o alguna propiedad que apunte al "content"-->
+"css"
+.grid-item:first-child{ <!-- Apuntamos al primer item.-->
+    align-self: start; <!-- Tambien puede ser "center", "end"-->
+    justify-self: start; <!-- Se puede utilizar el shorthand
+    "place-self: start end;"-->
+}
