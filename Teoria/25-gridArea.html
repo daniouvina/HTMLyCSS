@@ -1,0 +1,22 @@
+
+Al grid area lo definimos nosotros.
+Lo recomendable es definir areas en celdas consecutivas.
+
+"html"
+<div class="grid-container">
+    <div class="grid-item grid-header">Header</div>
+    <div class="grid-item grid-main">Main</div>
+    <div class="grid-item grid-aside">Aside</div>
+    <div class="grid-item grid-footer">Footer</div>
+</div>
+
+"css"
+ .grid-container{
+    display: grid;
+    background: #444;
+    margin: 10px;
+    grid-template-areas:
+    "header header header"
+    "aside"
+    ""
+ }
