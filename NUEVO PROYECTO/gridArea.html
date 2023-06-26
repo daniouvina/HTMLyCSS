@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Se pone Charset, para definir la codificacion de caracteres utilizada.
+        Y se pone justo despues de la etiqueta "head", para que le navegador lo identifique y procese desde el inicio.
+        Si no declaramos el "charset", el navegador podria codificarlo de otra manera no deseada.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Es un fix que redefine los parametros por defecto
+        respecto al viewport en los distintos dispositivos.
+        "width=device-width" es para ajustar el ancho de la pagina a los distintos dispositivos.
+        "initial-scale=1.0" es para ajustar el zoom por defecto en los distintos dispositivos.-->
+    <link rel="stylesheet" type="text/css" href="normalize.css"> <!-- Incluimos el "normalize"-->
+    <link rel="stylesheet" type="text/css" href="gridArea.css"> <!-- Incluimos la "stylesheet" (Hoja de estilo)
+        al proyecto actual.-->
+    <title>Grid Area</title> <!-- Titulo de la web.-->
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item grid-header">
+        <ul>
+            <li><a href="#">Enlace1</a></li>
+            <li><a href="#">Enlace2</a></li>
+            <li><a href="#">Enlace3</a></li>
+            <li><a href="#">Enlace4</a></li>
+        </ul>
+        </div>
+        <div class="grid-item grid-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat dolorum debitis dolores cum numquam, fugit ullam minima esse reprehenderit facilis, tenetur totam delectus. Ab minus cupiditate quisquam ad tempora!</div>
+        <div class="grid-item grid-aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium voluptatem repudiandae distinctio facere sint, labore eaque excepturi omnis expedita reiciendis possimus. Placeat, est adipisci. Fugit facere quas quae asperiores.</div>
+        <div class="grid-item grid-footer">Boquita Corp.</div>
+    </div>
+
+</body>
+
+
+
+
+</html>

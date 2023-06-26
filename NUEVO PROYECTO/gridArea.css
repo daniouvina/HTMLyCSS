@@ -1,18 +1,4 @@
-
-Al grid area lo definimos nosotros.
-Lo recomendable es definir areas en celdas consecutivas.
-
-"html"
-<div class="grid-container">
-    <div class="grid-item grid-header">Header</div>
-    <div class="grid-item grid-main">Main</div>
-    <div class="grid-item grid-aside">Aside</div>
-    <div class="grid-item grid-footer">Footer</div>
-</div>
-
-"css"
-
- .grid-container{
+.grid-container{
     display: grid;
     background: #444;
     margin: 10px;
@@ -20,11 +6,18 @@ Lo recomendable es definir areas en celdas consecutivas.
     "header header header"
     "aside main main"
     "aside main main"
-    "footer footer footer"
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    "aside main main"
+    "footer footer footer";
+    grid-template-rows: repeat(auto-fill, 1fr); /*Ideal dar medidas
+    fijas a header y footer*/
     height: 90vh;
+    border: 5px solid #000;
  }
 
+ ul li{
+    display: inline-block;
+ }
+ 
  .grid-item{
     padding: 20px;
  }
